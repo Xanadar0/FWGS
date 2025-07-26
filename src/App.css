@@ -1,0 +1,73 @@
+:root {
+  font-family: "Montserrat", "Inter", "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  /* 
+  color: #f3f3f3;
+  background: linear-gradient(
+    200deg,
+    rgba(111, 102, 102, 0.9) 0%,
+    rgba(16, 15, 15, 0.9) 40%,
+    rgba(16, 15, 15, 0.9) 99.98%
+  ); */
+    background: darkorange;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  flex-grow: 1;
+  padding-top: 60px; /* щоб не ліпилось до хедера */
+}
+
+main:has(.back-link) {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 16px;
+  box-sizing: border-box;
+}
+
+.secondTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.5em;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 1em;
+  font-size: 1rem;
+}
+
+/*  768px */
+@media (max-width: 768px) {
+
+}
