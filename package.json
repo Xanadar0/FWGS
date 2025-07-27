@@ -13,6 +13,7 @@
     "lightgallery": "^2.9.0-beta.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
     "simplelightbox": "^2.14.3"
   },
   "devDependencies": {

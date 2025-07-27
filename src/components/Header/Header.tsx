@@ -1,8 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Header.module.css";
 
 export default function Header() {
-  const [isOpen, setOpen] = useState();
+  const [isOpen, setOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+  }, [isOpen]);
+
+  const handleNavClick = (id: string) => {
+    setOpen(false);
+    const el = document.getElementById(id);
+    el?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <header className={styles.header}>
@@ -14,16 +24,16 @@ export default function Header() {
         <nav className={`${styles.headerNav} ${isOpen ? styles.active : ""}`}>
           <ul className={styles.headerNavList}>
             <li className={styles.headerNavItem}>
-              <a href="#gallery" className={styles.headerNavLink}>GALLERY</a>
+              <button onClick={() => handleNavClick("gallery")} className={styles.headerNavLink}>GALLERY</button>
             </li>
             <li className={styles.headerNavItem}>
-              <a href="#project" className={styles.headerNavLink}>OUR PROJECT</a>
+              <button onClick={() => handleNavClick("projects")} className={styles.headerNavLink}>OUR PROJECT</button>
             </li>
             <li className={styles.headerNavItem}>
-              <a href="#contacts" className={styles.headerNavLink}>CONTACT US</a>
+              <button onClick={() => handleNavClick("contacts")} className={styles.headerNavLink}>CONTACT US</button>
             </li>
             <li className={styles.headerNavItem}>
-              <a href="#support" className={styles.headerNavLink}>SUPPORT US</a>
+              <button onClick={() => handleNavClick("support")} className={styles.headerNavLink}>SUPPORT US</button>
             </li>
           </ul>
         </nav>

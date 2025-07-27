@@ -1,0 +1,35 @@
+.footer {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.socialLinks {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  font-size: 32px;
+}
+
+.socialLinks a {
+  transition: color 0.3s ease;
+}
+
+.socialLinks a:hover {
+  color: #007bff;
+}
+
+@media (max-width: 600px) {
+  .socialLinks {
+    font-size: 20px;
+    gap: 12px;
+  }
+}

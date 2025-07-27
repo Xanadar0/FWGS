@@ -18,7 +18,8 @@ import lgZoom from 'lightgallery/plugins/zoom';
 export default function Gallery() {
     const onInit = () => {
     };
-    return (
+  return (
+        <section id="gallery">
          <div className="container">
       <h2 className="secondTitle">Gallery</h2>
 
@@ -34,6 +35,7 @@ export default function Gallery() {
           </a>
         ))}
       </LightGallery>
-    </div>
+      </div>
+    </section>
     );
 }

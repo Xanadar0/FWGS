@@ -8,7 +8,7 @@ export default function Projects() {
 
   return (
     <div className="container">
-      <section className={styles.projectsSection}>
+      <section id="projects" className={styles.projectsSection}>
         <h2 className="secondTitle">Our Projects</h2>
 
         <div className={styles.grid}>
