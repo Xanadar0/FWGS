@@ -18,9 +18,9 @@ export default function Header() {
     <header className={styles.header}>
       <div className={`${styles.container} ${styles.headerContainer}`}>
         <div className={styles.headerLogo}>
-          <span className={styles.headerText}>FWGS</span>
+          <span className={styles.headerText}><button onClick={() => handleNavClick("hero")} className={styles.headerNavLink}>
+            <img src="/Img/Logo/logo.png" alt="Logo" width={48} height={48} /></button></span>
         </div>
-
         <nav className={`${styles.headerNav} ${isOpen ? styles.active : ""}`}>
           <ul className={styles.headerNavList}>
             <li className={styles.headerNavItem}>
