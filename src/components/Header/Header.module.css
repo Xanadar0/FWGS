@@ -3,7 +3,7 @@
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: white;
+  color: rgb(255, 174, 0);
   background-color: black;
   background-image: url("/public/Img/background/background3.jpg");
   background-size: cover;
@@ -76,7 +76,7 @@ header::after {
 }
 
 .headerNavLink:hover {
-  color: #61dafb;
+  color: #ff7b00;
 }
 
 .burgerButton {

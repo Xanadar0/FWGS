@@ -3,9 +3,9 @@ import { FaDiscord, FaTelegramPlane } from 'react-icons/fa';
 
 export default function Contacts() {
   return (
-    <section id="contacts" className={styles.contactSection}>
+    <section  data-aos="fade-up"  className={styles.contactSection}>
       <div className="container">
-        <h2 className="secondTitle">Contact Us</h2>
+        <h2 id="contacts" className="secondTitle">Contact Us</h2>
 
         <div className={styles.socialLinks}>
           <a

@@ -6,7 +6,7 @@
   background-image: url("/public/Img/background/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1200px auto;
+  background-size: 100%;
 }
 .heroContent {
   position: relative;

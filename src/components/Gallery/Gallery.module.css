@@ -11,10 +11,9 @@
   border-radius: 8px;
   object-fit: cover;
   transition: transform 0.3s ease;
-}
 
-html {
-  scroll-behavior: smooth;
+  border: 1px solid;
+  border-color: rgb(255, 174, 0);
 }
 
 .galleryGrid a:hover img {

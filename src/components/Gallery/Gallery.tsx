@@ -19,9 +19,9 @@ export default function Gallery() {
     const onInit = () => {
     };
   return (
-        <section id="gallery">
+        <section data-aos="fade-up">
          <div className="container">
-      <h2 className="secondTitle">Gallery</h2>
+      <h2  id="gallery" className="secondTitle">Gallery</h2>
 
       <LightGallery
                 onInit={onInit}

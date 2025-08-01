@@ -7,9 +7,10 @@ export default function Projects() {
   const { visibleProjects, isAllVisible, handleToggleProjects } = useVisibleProjects();
 
   return (
+    <section data-aos="fade-up">
     <div className="container">
-      <section id="projects" className={styles.projectsSection}>
-        <h2 className="secondTitle">Our Projects</h2>
+      <section  className={styles.projectsSection}>
+        <h2 id="projects" className="secondTitle">Our Projects</h2>
 
         <div className={styles.grid}>
           {visibleProjects.map((project, idx) => (
@@ -19,6 +20,7 @@ export default function Projects() {
 
         <LoadMoreButton isAllVisible={isAllVisible} onClick={handleToggleProjects} />
       </section>
-    </div>
+      </div>
+    </section>
   );
 }

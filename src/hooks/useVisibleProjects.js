@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import projects from '../data/projectsData';
 
 export function useVisibleProjects(initialCount = 9, step = 9) {
   const [visibleCount, setVisibleCount] = useState(initialCount);
+
+  const firstNewIndex = visibleCount > initialCount ? initialCount : null;
 
   const isAllVisible = visibleCount >= projects.length;
   const visibleProjects = projects.slice(0, visibleCount);
@@ -19,5 +21,6 @@ export function useVisibleProjects(initialCount = 9, step = 9) {
     visibleProjects,
     isAllVisible,
     handleToggleProjects,
+    firstNewIndex,
   };
 }

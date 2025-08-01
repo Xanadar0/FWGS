@@ -1,5 +1,4 @@
 .projectsSection {
-  padding: 40px 20px;
   color: #fff;
 }
 
@@ -22,6 +21,10 @@
   padding: 20px;
   border-radius: 12px;
   transition: transform 0.3s ease;
+  color: rgb(255, 196, 0);
+
+  border: 1px solid;
+  border-color: rgb(255, 174, 0);
 
   background-image: url("/public/Img/background/background3.jpg");
   background-size: cover;
@@ -34,10 +37,6 @@
   color: rgb(255, 145, 0);
 }
 
-.card:hover {
-  transform: scale(1.05);
-}
-
 .links {
   margin-top: auto;
   display: flex;
@@ -46,7 +45,7 @@
 }
 
 .links a {
-  color: #4fc3f7;
+  color: rgb(255, 145, 0);
   margin-right: 15px;
   text-decoration: none;
   font-weight: 500;
@@ -54,6 +53,7 @@
 
 .links a:hover {
   text-decoration: underline;
+  color: rgb(255, 81, 0);
 }
 
 .loadMoreWrapper {
@@ -73,6 +73,7 @@
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
+  font-size: 20px;
 }
 
 .loadMoreBtn:hover {

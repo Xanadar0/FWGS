@@ -8,12 +8,14 @@ export default function Header() {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
   }, [isOpen]);
 
-  const handleNavClick = (id: string) => {
-    setOpen(false);
-    const el = document.getElementById(id);
-    el?.scrollIntoView({ behavior: "smooth" });
-  };
+ const handleNavClick = (id: string) => {
+  setOpen(false);
+  const el = document.getElementById(id);
 
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+};
   return (
     <header className={styles.header}>
       <div className={`${styles.container} ${styles.headerContainer}`}>
