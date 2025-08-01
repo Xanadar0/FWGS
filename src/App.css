@@ -3,7 +3,7 @@
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  /* 
+  /*   
   color: #f3f3f3;
   background: linear-gradient(
     200deg,
@@ -11,12 +11,13 @@
     rgba(16, 15, 15, 0.9) 40%,
     rgba(16, 15, 15, 0.9) 99.98%
   ); */
-    background: darkorange;
+  background: black;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
 
 body {
   margin: 0;
@@ -26,17 +27,24 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
+
+  background: linear-gradient(to bottom right, #000000, #555555c4);
+
+  /* background-image: url("/public/Img/background/background1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
 }
 
 main {
   flex-grow: 1;
-  padding-top: 60px; /* щоб не ліпилось до хедера */
-}
+  padding-top: 60px;
 
-main:has(.back-link) {
-  text-align: center;
+  main:has(.back-link) {
+    text-align: center;
+  }
 }
-
 
 .container {
   width: 100%;
@@ -48,9 +56,10 @@ main:has(.back-link) {
 
 .secondTitle {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin: 50px;
   text-align: center;
-  color: #fff;
+  color: rgb(255, 174, 0);
+  font-size: 50px;
 }
 
 h1,
@@ -70,5 +79,4 @@ p {
 
 /*  768px */
 @media (max-width: 768px) {
-
 }

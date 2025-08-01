@@ -1,17 +1,41 @@
 .footer {
-  background-color: #1e1e1e;
   color: white;
-  padding: 40px 0;
   text-align: center;
+  background-image: url("/public/Img/background/background3.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 200px;
+  color: rgb(255, 174, 0);
+}
+
+.footerContainer {
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+footer::before {
+  content: "";
+  display: block;
+  height: 10px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    black,
+    black 20px,
+    rgb(255, 174, 0) 20px,
+    yellow 40px
+  );
 }
 
 .footer a {
   color: white;
   text-decoration: none;
+  color: rgb(255, 174, 0);
+  font-size: 24px;
 }
 
 .socialLinks {
-  margin: 20px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -21,6 +45,7 @@
 
 .socialLinks a {
   transition: color 0.3s ease;
+  color: rgb(255, 174, 0);
 }
 
 .socialLinks a:hover {

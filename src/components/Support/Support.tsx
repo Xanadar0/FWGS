@@ -48,7 +48,9 @@ export default function Support() {
     <div className={styles.cardGrid}>
       {developers.map((dev, idx) => (
         <div key={idx} className={styles.card}>
+          <div className={styles.avatarWrapper}>
           <img src={dev.image} alt={dev.name} className={styles.avatar} />
+          </div>
           <h3>{dev.name}</h3>
           <p>{dev.role}</p>
           <div className={styles.links}>

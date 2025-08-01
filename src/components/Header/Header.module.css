@@ -1,10 +1,28 @@
 .header {
-  padding: 16px 0;
   position: sticky;
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: white;
+  background-color: black;
+  background-image: url("/public/Img/background/background3.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+header::after {
+  content: "";
+  display: block;
+  height: 10px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    black,
+    black 20px,
+    rgb(255, 174, 0) 20px,
+    yellow 40px
+  );
 }
 
 .container {

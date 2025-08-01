@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className="container">
-        <p>Contact us: <a href="mailto:contact@fwgs.ru">contact@fwgs.ru</a></p>
+        <p className={styles.footerContainer}>Email: <a href="mailto:contact@fwgs.ru">contact@fwgs.ru</a></p>
         <div className={styles.socialLinks}>
           <a href="https://masturbated.one/explore" target="_blank" rel="noopener noreferrer" title="Mastodon">
             <FaMastodon />
