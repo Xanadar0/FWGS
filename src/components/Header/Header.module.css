@@ -151,8 +151,10 @@ header::after {
   }
 
   .headerNavList {
-    flex-direction: column;
-    gap: 2rem;
+    display: flex;
+    gap: 24px;
+    position: relative;
+    padding-bottom: 5px;
   }
 
   .headerNav.active {
@@ -160,4 +162,40 @@ header::after {
     opacity: 1;
     pointer-events: auto;
   }
+}
+
+.headerNavLink {
+  position: relative;
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 8px 4px;
+  transition: color 0.3s ease;
+}
+
+.headerNavLink:hover,
+.headerNavLink.active {
+  color: #ffea00;
+  text-shadow: 0 0 5px #ffea00, 0 0 10px #ffea00;
+}
+
+.headerNavLink::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 2px;
+  width: 16px;
+  height: 1px;
+  background-color: transparent;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+  pointer-events: none;
+}
+
+.headerNavLink:hover::after,
+.headerNavLink.active::after {
+  background-color: #ffea00;
 }
